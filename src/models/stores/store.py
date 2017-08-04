@@ -1,3 +1,5 @@
+__author__ = 'jushitaa'
+
 class Store(object):
     def __init__(self, name, url_prefix):
         self.name = name

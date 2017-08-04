@@ -1,5 +1,7 @@
 from flask import Blueprint
 
+__author__ = 'jushitaa'
+
 
 item_blueprint = Blueprint('/items', __name__)
 

@@ -1,5 +1,7 @@
 from flask import Blueprint
 
+__author__ = 'jushitaa'
+
 
 alert_blueprint = Blueprint('alerts', __name__)
 

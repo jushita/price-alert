@@ -1,5 +1,8 @@
 from flask import Blueprint
 
+__author__ = 'jushitaa'
+
+
 user_blueprint = Blueprint('users', __name__)
 
 

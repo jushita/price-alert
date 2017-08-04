@@ -1,3 +1,5 @@
+__author__ = 'jushitaa'
+
 class User(object):
     def __init__(self, email, password):
         self.email = email

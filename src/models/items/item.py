@@ -1,3 +1,5 @@
+__author__ = 'jushitaa'
+
 class Item(object):
     def __init__(self, name, price, url):
         self.name = name
