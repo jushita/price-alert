@@ -27,7 +27,7 @@ class User(object):
         """
 
         user_data = Database.find_one("users", {"email": email}) # Password in sha512 -> pbkdf2_sha512
-        if user_data is None: #Tell user that their email doesn't exist
+        if user_data is None: #Tell user that their email doe sn't exist
             raise UserErrors.UserNotExistsError("Your user doesn't exist")
 
         if not Utils.check_hashed_password(password, user_data['password']): # Tell user their password is wrong
