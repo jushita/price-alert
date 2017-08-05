@@ -15,10 +15,10 @@ def login_user():
         email = request.form['email']
         password = request.form['hashed']
 
-        if User.is_login_valid(email,password):
-            session['email']= email
+        if User.is_login_valid(email, password):
+            session['email'] = email
             return redirect(url_for(".user_alerts"))
-    return render_template("user/login.html") # Send user an error if their login is invalid
+    return render_template("users/login.html") # Send user an error if their login is invalid
 
 
 @user_blueprint.route('/register')
@@ -28,7 +28,7 @@ def register_user():
 
 @user_blueprint.route('/alerts')
 def user_alerts():
-    pass
+    return "This is the alerts page"
 
 
 @user_blueprint.route('/logout')

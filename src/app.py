@@ -7,6 +7,7 @@ __author__ = "jushitaa"
 
 app = Flask(__name__)
 app.config.from_object('config')
+app.secret_key = "123"
 
 
 @app.before_first_request
@@ -15,5 +16,5 @@ def init_db():
 
 
 from src.models.users.views import user_blueprint
-app.register_blueprint(user_blueprint, url_prefix="/user")
+app.register_blueprint(user_blueprint, url_prefix="/users")
 
